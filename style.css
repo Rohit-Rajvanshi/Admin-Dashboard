@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"Kanit",Arial, Helvetica, sans-serif;
+}
+
+
+
+.page{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+.sidebar{
+    grid-row: 1/5;
+    background-color: #0f172a;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr ;
+    grid-template-columns: 0.3fr 3.7fr   ;
+    color: white;
+}
+
+.header{
+    grid-column: 2/5;
+    background-color:white;
+}
+
+.content{
+    grid-row: 2/5;
+    background-color: #020617;
+    grid-column: 2/5;
+}
+
+
+
+.sidebar .heading,
+.sidebar .nav,
+.sidebar .branding {
+    grid-column: 1/3;
+    grid-column-start: 2;
+}
+
+.nav ul,
+.branding ul{
+    list-style: none;
+    display: grid;
+    gap: 20px;
+    font-size: larger;
+    margin-bottom: 40px;
+    
+}
+
+.heading{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: large;
+    margin-bottom: 40px;
+}
+
+
+.branding {
+    align-self:end ;
+    margin-bottom: 10px;
+}
+
+
+
+.heading-svg{
+    height: 40px;
+    width: 40px;
+    top: 7px;
+    position: relative;
+    margin-right: 15px;
+    margin-bottom: 100px;
+
+}
+
+ul svg{
+    height: 30px;
+    position: relative;
+    top: 8px;
+    margin-right: 18px;
+    
+}
+
+svg{
+    fill: white;
+}
+
+.sidebar li:hover {
+    background-color: #334155;
+    cursor:pointer;
+}
+
+svg:hover{
+   fill: #6578a4;
+}
+
+.sidebar li{
+    width: 240px;
+    border-radius: 4px;
+    
+}
+
+.searchbar svg{
+    height: 30px;
+    fill: black;
+    margin-right: 10px;
+}
+
+.searchbar{
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bar{
+    height: 28px;
+    width: 500px;
+    background-color: #cacaca;
+    border-radius: 8px;
+}
+
+.user-info svg{
+    height: 30px;
+    fill: black;
+    
+}
+
+.top-header{
+    display: flex;
+    flex: row;
+
+}
+
+.user-info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.top-header img{
+    height: 30px;
+    margin-left: 10px;
+}
+
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    
+}
+
+.profile div{
+    font-size: larger;
+    margin-left: 15px;
+}
+
+.profile:hover{
+    transform: scale(1.2,1.2);
+}
+
+
+.bottom-header{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.bottom-header img{
+    height: 80px;
+}
+
+.bottom-header img:hover{
+    transform: scale(1.2,1.2);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.text:hover{
+    color: blue;
+}
+
+.name{
+    font-size: xx-large;
+}
+
+.buttons button:hover{
+    background-color: #020617;
+    color: white;
+    border-radius: 10px;
+    height: 35px;
+    width: 90px;
+    margin-left: 30px;
+    border: 1px solid ;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 175px;
+    margin-top: 40px;
+}
+
+.buttons button{
+    background-color: white;
+    color: #020617;
+    border-radius: 10px;
+    height: 35px;
+    width: 90px;
+    margin-left: 30px;
+    border: 1px solid ;
+}
+
+.bell{
+    display: flex;
+    flex-direction: row;
+    margin-left: 230px;
+}
+
+.bell svg{
+    margin-right: 15px;
+}
+
+.header svg:hover path{
+    fill: #6578a4;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    color: black;
+    gap: 30px;
+    padding: 20px;
+}
+
+.content div{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.content svg{
+    height: 50px;
+    fill:black;
+}
+
+.content svg:hover,
+.common-text:hover{
+    fill: blue;
+    color: blue;
+}
+
+.common-text{
+    font-size: x-large;
+}
+
+.content .hover:hover{
+    transform: scale(1.1,1.1)
+}
+
+.percentage{
+    color: green;
+}
+
+
+
+.header svg:hover,
+.content svg:hover{
+    transform: scale(1.2,1.2);
+}
+
+.buttons button:hover{
+    transform: scale(1.2,1.2);
+}
+
+.sidebar li:hover{
+    transform: scale(1.2,1.2);
+}
+
+.graph{
+    grid-column: 1/3 ;
+    grid-row: 2/4;
+    background-color: white;
+    padding: 10px;
+    font-size: large;
+}
+
+.graph img:hover{
+    cursor: crosshair;
+}
+
+
+
+
+.g-text:hover{
+    color: blue;
+}
+
+.content>div{
+    box-shadow: 4px 4px 4px rgba(255,255,255,0.8);
+}
+
+.announcements{
+    grid-row: 2/4;
+    background-color: white;
+}
+
+
+.messages{
+    grid-row: 2/3;
+    background-color: white;
+
+}
+
+.a{
+    display: flex;
+    flex-direction: column;
+    grid-column-start:1 ;
+    margin-left: 10px;
+    
+}
+
+
+
+.announcements{
+    display: grid !important;
+    grid-template-rows: repeat(4,1fr);
+    gap: 20px;
+   
+}
+
+.a-s{
+    text-align: start !important;
+    
+}
+
+.a-d{
+    font-size: medium;
+    color: rgb(124, 124, 124);
+}
+
+.a-t{
+    font-size: larger;
+    color: black;
+}
+
+.a-s:hover{
+    background-color: #020617;
+    color: white;
+}
+
+
+
+.mails{
+    
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.trash{
+    
+    font-size: larger;
+    font-weight: bolder;
+}
